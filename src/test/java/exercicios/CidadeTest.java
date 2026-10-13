@@ -1,14 +1,16 @@
-package exercicios;
 
-import io.github.manoelcampos.examcorrection.ClassTest;
+public class Cidade {
+    private String nome;
 
-import java.util.Map;
+    public Cidade(String nome) {
+        this.nome = nome;
+    }
 
-/**
- * @author Manoel Campos
- */
-class CidadeTest extends ClassTest {
-    CidadeTest() {
-        super(Map.of("nome", "String"));
+    public String getNome() {
+        return nome;
+    }
+
+    public void setNome(String nome) {
+        this.nome = nome;
     }
 }
